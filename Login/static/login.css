@@ -4,7 +4,7 @@ html {
   cursor: url("../static/images/cursor.png"), default;
 }
 body {
-  background-image: url("../static/images/background.png");
+  background-image: url("../static/images/background.jpg");
   font-family: "IBM Plex Sans", "Inter", sans-serif;
   user-select: none;
   background-repeat: no-repeat;
