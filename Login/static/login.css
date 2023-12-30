@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@400;700&display=swap");
+
+html {
+  cursor: url("../static/images/cursor.png"), default;
+}
+body {
+  background-image: url("../static/images/background.png");
+  font-family: "IBM Plex Sans", "Inter", sans-serif;
+  user-select: none;
+  background-repeat: no-repeat;
+  background-attachment: contain;
+  background-size: cover;
+}
+#login {
+  display: grid;
+  width: 27rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+  margin: 6rem auto;
+  background-color: lavender;
+  border-radius: 20px;
+  border-style: none;
+  border-color: lavender;
+  transition: 0.42s;
+  cursor: url("../static/images/cursor.png"), default;
+}
+#email,
+#password {
+  height: 2rem;
+  width: 16.2rem;
+  border-radius: 4.2px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0.9rem 0rem;
+  padding: 0.3rem;
+  border-style: groove;
+  cursor: url("../static/images/cursor.png"), default;
+}
+
+#login:hover {
+  box-shadow: 0px 0px 12px 1px lavenderblush;
+  width: 30rem;
+  padding: 4rem 0rem;
+  margin: 5rem auto;
+  border-radius: 0.81rem;
+  cursor: url("../static/images/cursor.png"), default;
+}
+
+#Submit {
+  height: 3rem;
+  width: 100%;
+  margin-top: 1.2rem;
+  background-color: #f1e0d7;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  border-color: #f1e0d7;
+}
+#Submit:hover {
+  box-shadow: 0px 0px 12px 6px lavenderblush;
+  cursor: pointer;
+  cursor: url("../static/images/cursor.png"), default;
+}
