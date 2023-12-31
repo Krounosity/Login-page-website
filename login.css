@@ -65,7 +65,7 @@ body {
   cursor: url("cursor.png"), default;
 }
 
-@media (max-width: 420px) and (max-height: 930px) {
+@media (max-width: 60rem) and (max-height: 120rem) {
   body {
     background-image: url("background.jpg");
     font-family: "IBM Plex Sans", "Inter", sans-serif;
