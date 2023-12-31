@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@400;700&display=swap");
 
 html {
-  cursor: url("../static/images/cursor.png"), default;
+  cursor: url("cursor.png"), default;
 }
 body {
-  background-image: url("../static/images/background.jpg");
+  background-image: url("background.jpg");
   font-family: "IBM Plex Sans", "Inter", sans-serif;
   user-select: none;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body {
   border-style: none;
   border-color: lavender;
   transition: 0.42s;
-  cursor: url("../static/images/cursor.png"), default;
+  cursor: url("cursor.png"), default;
 }
 #email,
 #password {
@@ -37,7 +37,7 @@ body {
   margin: 0.9rem 0rem;
   padding: 0.3rem;
   border-style: groove;
-  cursor: url("../static/images/cursor.png"), default;
+  cursor: url("cursor.png"), default;
 }
 
 #login:hover {
@@ -46,7 +46,7 @@ body {
   padding: 4rem 0rem;
   margin: 5rem auto;
   border-radius: 0.81rem;
-  cursor: url("../static/images/cursor.png"), default;
+  cursor: url("cursor.png"), default;
 }
 
 #Submit {
@@ -62,5 +62,5 @@ body {
 #Submit:hover {
   box-shadow: 0px 0px 12px 6px lavenderblush;
   cursor: pointer;
-  cursor: url("../static/images/cursor.png"), default;
+  cursor: url("cursor.png"), default;
 }
