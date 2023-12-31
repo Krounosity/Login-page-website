@@ -4,9 +4,18 @@ html {
   cursor: url("cursor.png"), default;
 }
 body {
-  background-image: url("background.jpg");
   font-family: "IBM Plex Sans", "Inter", sans-serif;
   user-select: none;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-image: url("background.jpg");
+  width: 100vw;
+  height: 100vh;
+  filter: blur(0.2rem);
   background-repeat: no-repeat;
   background-attachment: contain;
   background-size: cover;
