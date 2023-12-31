@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@400;700&display=swap");
+
+html {
+  cursor: url("cursor.png"), default;
+}
+body {
+  font-family: "IBM Plex Sans", "Inter", sans-serif;
+  user-select: none;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-image: url("background.jpg");
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For compatibility with some browsers */
+  backdrop-filter: blur(5px); /* Standard syntax for backdrop-filter */
+  background-repeat: no-repeat;
+  background-attachment: contain;
+  background-size: cover;
+}
+#formSub {
+  display: grid;
+  width: 47rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+  margin: 6rem auto;
+  background-color: lavender;
+  border-radius: 20px;
+  border-style: none;
+  border-color: lavender;
+  transition: 0.42s;
+  cursor: url("cursor.png"), default;
+}
+
+#formSub:hover {
+  box-shadow: 0px 0px 12px 1px lavenderblush;
+  width: 46.2rem;
+  padding: 4rem 0rem;
+  margin: 5rem auto;
+  border-radius: 0.81rem;
+  cursor: url("cursor.png"), default;
+}
+
+@media (max-width: 72rem) and (max-height: 144rem) {
+  #background {
+    background-image: url("background.jpg");
+    font-family: "IBM Plex Sans", "Inter", sans-serif;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #formSub {
+    display: grid;
+    width: 14rem;
+    font-size: 0.72rem;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+    margin: 13.5rem auto;
+    background-color: lavender;
+    border-radius: 20px;
+    border-style: none;
+    border-color: lavender;
+    transition: 0.42s;
+    cursor: url("cursor.png"), default;
+  }
+  #formSub:hover {
+    box-shadow: 0px 0px 12px 1px lavenderblush;
+    width: 13.7rem;
+    padding: 2rem 1rem;
+    margin: 12.3rem auto;
+    border-radius: 0.81rem;
+    cursor: url("cursor.png"), default;
+  }
+}
