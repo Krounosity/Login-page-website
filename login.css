@@ -65,7 +65,7 @@ body {
   cursor: url("cursor.png"), default;
 }
 
-@media (max-width: 360px) and (max-height: 640px) {
+@media (max-width: 420px) and (max-height: 930px) {
   body {
     background-image: url("background.jpg");
     font-family: "IBM Plex Sans", "Inter", sans-serif;
@@ -83,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 0rem;
-    margin: 9rem auto;
+    margin: 15rem auto;
     background-color: lavender;
     border-radius: 20px;
     border-style: none;
@@ -94,8 +94,8 @@ body {
   #login:hover {
     box-shadow: 0px 0px 12px 1px lavenderblush;
     width: 16rem;
-    padding: 4rem 0rem;
-    margin: 5rem auto;
+    padding: 2rem 0rem;
+    margin: 14rem auto;
     border-radius: 0.81rem;
     cursor: url("cursor.png"), default;
   }
@@ -107,7 +107,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     margin: 0.9rem 0rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     border-style: groove;
     cursor: url("cursor.png"), default;
   }
