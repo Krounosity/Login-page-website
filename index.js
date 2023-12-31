@@ -1,4 +1,5 @@
-function validation() {
+function validation(event) {
+  event.preventDefault();
   var email = $("#email").val();
   var password = $("#password").val();
 
@@ -19,7 +20,7 @@ function validation() {
     }
   }
   if (email && password) {
-    alert("Form submitted.");
+    window.location.assign("submitted.html");
   }
 }
 
