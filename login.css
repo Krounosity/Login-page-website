@@ -6,22 +6,11 @@ html {
 body {
   font-family: "IBM Plex Sans", "Inter", sans-serif;
   user-select: none;
-}
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
   background-image: url("background.jpg");
-  width: 100%;
-  height: 100%;
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); /* For compatibility with some browsers */
-  backdrop-filter: blur(5px); /* Standard syntax for backdrop-filter */
-  background-repeat: no-repeat;
-  background-attachment: contain;
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
 }
+
 #login {
   display: grid;
   width: 27rem;
@@ -30,7 +19,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 3rem 0rem;
-  margin: 6rem auto;
+  margin: auto;
+  margin-bottom: 0rem;
   background-color: lavender;
   border-radius: 20px;
   border-style: none;
@@ -43,7 +33,8 @@ body {
   box-shadow: 0px 0px 12px 1px lavenderblush;
   width: 25.2rem;
   padding: 4rem 0rem;
-  margin: 5rem auto;
+  margin: auto;
+  margin-bottom: 0rem;
   border-radius: 0.81rem;
   cursor: url("cursor.png"), default;
 }
@@ -77,6 +68,57 @@ body {
   cursor: url("cursor.png"), default;
 }
 
+.small {
+  display: grid;
+  width: 27rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+  margin: 2rem auto;
+  background-color: lavender;
+  border-radius: 20px;
+  border-style: none;
+  border-color: lavender;
+  transition: 0.42s;
+  cursor: url("cursor.png"), default;
+  margin-bottom: 0.5rem;
+}
+
+.small:hover {
+  box-shadow: 0px 0px 12px 1px lavenderblush;
+  width: 25.2rem;
+  padding: 1.5rem 0rem;
+  margin: 2rem auto;
+  border-radius: 0.81rem;
+  cursor: url("cursor.png"), default;
+}
+#images {
+  display: flex;
+  width: 27rem;
+  gap: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+  margin: 0rem auto;
+  border-radius: 20px;
+  border-style: none;
+  transition: 0.42s;
+  cursor: url("cursor.png"), default;
+  margin-bottom: 0.5rem;
+}
+.image {
+  width: 3rem;
+  padding: 1rem;
+  border-radius: 36%;
+  background-color: lavender;
+}
+#other_sign {
+  padding: 0rem 0rem;
+}
 /* Media query for responsiveness in smartphones. */
 
 @media (max-width: 72rem) and (max-height: 144rem) {
@@ -97,7 +139,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 0rem;
-    margin: 15rem auto;
+    margin: auto;
+    margin-bottom: 0rem;
     background-color: lavender;
     border-radius: 20px;
     border-style: none;
@@ -109,7 +152,8 @@ body {
     box-shadow: 0px 0px 12px 1px lavenderblush;
     width: 17rem;
     padding: 2rem 0rem;
-    margin: 14rem auto;
+    margin: auto;
+    margin-bottom: 0rem;
     border-radius: 0.81rem;
     cursor: url("cursor.png"), default;
   }
@@ -134,5 +178,56 @@ body {
     font-size: 1rem;
     transition: 0.3s;
     border-color: #f1e0d7;
+  }
+  .small {
+    display: grid;
+    width: 18rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    margin: 2rem auto;
+    background-color: lavender;
+    border-radius: 20px;
+    border-style: none;
+    border-color: lavender;
+    transition: 0.42s;
+    cursor: url("cursor.png"), default;
+  }
+
+  .small:hover {
+    box-shadow: 0px 0px 12px 1px lavenderblush;
+    width: 17rem;
+    padding: 1.5rem 0rem;
+    margin: 2rem auto;
+    border-radius: 0.81rem;
+    cursor: url("cursor.png"), default;
+  }
+  #images {
+    display: flex;
+    width: 18rem;
+    gap: 2.4rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    margin: 0rem auto;
+    border-radius: 20px;
+    border-style: none;
+    transition: 0.42s;
+    cursor: url("cursor.png"), default;
+    margin-bottom: 0.5rem;
+  }
+  .image {
+    width: 2.1rem;
+    padding: 1rem;
+    border-radius: 36%;
+    background-color: lavender;
+  }
+  #other_sign {
+    padding: 0rem;
+    margin-bottom: 0rem;
   }
 }
